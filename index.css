@@ -1,51 +1,5 @@
-:root {
-    --padding-unit: 4px;
-    --text-colour: #a35ffb;
-    --off-white: #f2f3f4;
-    --contrast-colour: #5ffbf1;
-}
-
-body {
-    background-image: linear-gradient(to right top, #d16ba5, #b175b7, #8e7dbf, #6c83bb, #5585ae, #4f8eb2, #4c97b3, #4ea0b3, #4eb6c6, #4fcdd7, #54e4e5, #5ffbf1);
-    background-repeat: no-repeat;
-
-    font-family: 'Roboto', sans-serif;
-    padding: var(--padding-unit);
-}
-
-.card {
-    background: radial-gradient(circle at left top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 6px;
-
-    padding: calc(var(--padding-unit)*1) calc(var(--padding-unit)*3) calc(var(--padding-unit)*1) calc(var(--padding-unit)*3);
-    margin-bottom: calc(var(--padding-unit)*2);
-    margin-right: calc(var(--padding-unit)*2);
-    width: calc(50% - 34px);
-}
-
-@media only screen and (max-width: 1350px) {
-    .card {
-        width: 100%;
-    }
-}
-
-h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--off-white);
-}
-
 h2 {
     color: var(--text-colour);
-}
-
-.larger-font {
-    font-size: 1.2rem;
-    color: var(--off-white);
 }
 
 .icon-container {
@@ -116,13 +70,6 @@ a:link {
 
 a:visited {
     text-decoration: none;
-}
-
-.flex-span-header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
 }
 
 .flex-span-tags {  
