@@ -1,8 +1,12 @@
 :root {
     --padding-unit: 4px;
-    --text-colour: #a35ffb;
     --off-white: #f1f1f1;
-    --contrast-colour: #5ffbf1;
+    --theme-left-corner: #d16ba5;
+    --theme-left-middle: #8e7dbf;
+    --theme-center: #4c97b3;
+    --theme-right-middle: #4fcdd7;
+    --theme-right-corner: #5ffbf1;
+    --light-black: #252525;
 }
 
 body {
@@ -13,6 +17,7 @@ body {
 
     font-family: 'Roboto', sans-serif;
     padding: var(--padding-unit);
+    min-height: 100Vh;
 }
 
 h1 {

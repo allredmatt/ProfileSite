@@ -1,16 +1,13 @@
 h2 {
-    color: var(--text-colour);
+    color: var(--light-black);
 }
 
 .icon-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .icon-image {
@@ -31,32 +28,38 @@ h2 {
 }
 
 .rectangle {
-    width: clamp(142px, 100%, 240px);
-
-    background: radial-gradient(circle at left top, rgba(163, 95, 251, 0.7), rgba(163, 95, 251, 0.4));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 4px;
-    padding: var(--padding-unit);
+    width: clamp(142px, 100%, 280px);
+    padding: calc(var(--padding-unit)*1);
+    padding-left: calc(var(--padding-unit)*1.5) ;
     margin-bottom: var(--padding-unit);
     position: relative;
-    color: var(--off-white);
+    color: var(--light-black);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    
+}
+
+a.rectangle:hover {
+    background: radial-gradient(circle at left top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .project-details{
     margin: 0px;
     font-size: 1rem;
+    margin-bottom: calc(var(--padding-unit)*2);;
 }
 
 h3 {
     text-align: center;
-    color: var(--off-white);
     margin-top: var(--padding-unit);
     margin-bottom: var(--padding-unit);
 }
 
 .button-style-link {
-    background-color: var(--contrast-colour);
+    background-color: var(--theme-right-middle);
     border-radius: 4px;
     color: black;
     padding: 3px;
@@ -77,7 +80,7 @@ a:visited {
     flex-wrap: wrap;
     width: 100%;
     justify-content: flex-start;
-    padding-right: var(--padding-unit)
+    padding-right: var(--padding-unit);
 }
 
 .absolute-bottom-right {
@@ -87,11 +90,15 @@ a:visited {
 }
 
 .tag {
-    border: 1px solid var(--contrast-colour);
-    color: var(--contrast-colour);
-    border-radius: 2px;
-    padding: 1px;
+    color: var(--theme-right-corner);
+    background-color: rgb(76, 151, 179, 0.5);
+    border-radius: 20px;
+    padding: 4px;
     font-size: 0.75rem;
-    margin-right: calc(var(--padding-unit)*0.5);
+    margin-left: calc(var(--padding-unit)*2);
+}
 
+
+em {
+    margin-right: calc(var(--padding-unit)*0.5);
 }
