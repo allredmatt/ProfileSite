@@ -26,12 +26,15 @@
 
 .nav-link {
     display: inline-flex;
-    padding-left: calc(var(--padding-unit)*3);
+    padding-left: calc(var(--padding-unit)*2);
     padding-right: calc(var(--padding-unit)*3);
-    margin-right: calc(var(--padding-unit)*4);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     height: 35px;
     border-right: 2px solid rgba( 255, 255, 255, 0.3 );
+}
+
+.nav-link:first-child {
+    padding-left: calc(var(--padding-unit)*3);
 }
 
 .nav-link:last-child {
@@ -40,6 +43,10 @@
 
 .nav-text {
     margin: 7px 0px 1px 6px;
+}
+
+.nav-icon {
+    height: 35px;
 }
 
 a:link {
