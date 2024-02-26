@@ -4,17 +4,16 @@
     top: 8px;
     color: var(--light-black);
     border-radius: 5px;
-    background: radial-gradient(circle at left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    background: radial-gradient(circle at left top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    width: 500px;
 
-
-    padding: 3px calc(var(--padding-unit)*1) 0px calc(var(--padding-unit)*5);
-    margin-right: calc(var(--padding-unit)*2);
+    /*padding: 3px calc(var(--padding-unit)*1) 0px calc(var(--padding-unit)*5);
+    margin-right: calc(var(--padding-unit)*2);*/
 }
 
 @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
     /*Intend to add a better background to allow blur*/
     .card-nav {
-        background: radial-gradient(circle at left top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
         backdrop-filter: blur(7px);
         -webkit-backdrop-filter: blur(7px);
     }
@@ -22,27 +21,42 @@
 
 .nav-span {
     color: var(--light-black);
+    padding: calc(var(--padding-unit)*1);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nav-link {
     display: inline-flex;
-    padding-left: calc(var(--padding-unit)*2);
-    padding-right: calc(var(--padding-unit)*3);
+    /*padding-left: calc(var(--padding-unit)*2);
+    padding-right: calc(var(--padding-unit)*3);*/
     font-size: 1.2rem;
     height: 35px;
     border-right: 2px solid rgba( 255, 255, 255, 0.3 );
 }
 
-.nav-link:first-child {
+/*.nav-link:first-child {
     padding-left: calc(var(--padding-unit)*3);
 }
-
+*/
 .nav-link:last-child {
     border-right: 0
 }
 
 .nav-text {
     margin: 7px 0px 1px 6px;
+    width: 115px;
+}
+
+@media only screen and (max-width: 550px) {
+    .nav-text {
+        visibility: hidden;
+        width: 5px;
+    }
+
+    .card-nav {
+        width: 200px;
+    }
 }
 
 .nav-icon {
