@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects - Bug Tracker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" 
+    content="Details about a fitness program tracker and how it was created"
+  >
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+  
+  <link rel="icon" type="image/png" href="../favicon.ico" sizes="16x16">
+  <link rel="icon" type="image/png" href="../favicon-32.ico" sizes="32x32">
+</head>
+<body>
+  <header>
+    <h1>Tree Hopper</h1>
+  </header>
+  <nav class='card-nav'>
+    <span class='nav-span'>
+      <a href='/' class='nav-link'>
+        <img src="../images/nav/home.svg" alt='Home' class="nav-icon"/>
+        <p class="nav-text"><b>Home</b></p>
+      </a>
+      <a href='https://treehopper.vercel.app/' class='nav-link'>
+        <img src="../images/nav/website.svg" alt='Live Site' class="nav-icon"/>
+        <p class="nav-text"><b>Live Site</b></p>
+      </a>
+      <a href='https://github.com/allredmatt/TreeHopper' target="_blank" rel="noreferrer" class='nav-link'>
+        <img src="../images/nav/github.svg" alt='Source Code' class="nav-icon"/>
+        <p class="nav-text"><b>Source Code</b></p>
+      </a>
+    </span>
+  </nav>
+  <div class='flex-container'>
+    <img class='screenshot-image' src='../images/fitnessSiteScreenshot.webp' alt='Screenshot of my profile site'/>
+    <span class='card'>
+      <h3>
+          Treehopper - a bug tracking app.
+      </h3>
+      <p>
+        An webapp for me to track bugs and issues within my projects that I'm building, so I get into good practice but also have all this information in one place.
+      </p>
+      <p>
+        Was able to refine my react and next.js skills to this project, but the main focus was to build users with associated privileges. These users can only access projects they are linked too and not others, this was achived using fauna as a database and security service and their own query/function language FQL. Had to update MUI version part way through, this was a new skill I had to develop of following documentation for upgrades etc...
+      </p>
+      <h3>
+        Strengths of this project:
+      </h3>
+      <ul>
+        <li>User privileges</li>
+        <li>Fauna FQL functions and setup for security and database</li>
+        <li>Clean UI and easy to use</li>
+      </ul>
+      <h3>
+        Weaknesses of this project:
+      </h3>
+      <ul>
+        <li>Older version of Next.js running</li>
+        <li>Fauna isn't the most common databased used by others</li>
+      </ul>
+    </span>
+  </div>
+</body>
+</html>
