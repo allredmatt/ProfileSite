@@ -7,13 +7,15 @@
     --theme-right-middle: #4fcdd7;
     --theme-right-corner: #5ffbf1;
     --light-black: #252525;
+    --mobile-width: 360px;
 }
 
 body {
     background-image: linear-gradient(to right top, #d16ba5, #b175b7, #8e7dbf, #6c83bb, #5585ae, #4f8eb2, #4c97b3, #4ea0b3, #4eb6c6, #4fcdd7, #54e4e5, #5ffbf1);
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
-    padding: var(--padding-unit);
+    padding-left: var(--padding-unit);
+    padding-right: var(--padding-unit);
     min-height: 100Vh;
 }
 
@@ -46,11 +48,5 @@ h1 {
         background: radial-gradient(circle at left top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
         backdrop-filter: blur(7px);
         -webkit-backdrop-filter: blur(7px);
-    }
-}
-
-@media only screen and (max-width: 1350px) {
-    .card {
-        width: 100%;
     }
 }
