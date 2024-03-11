@@ -1,7 +1,4 @@
 .card-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 8px;
   color: var(--light-black);
   border-radius: 5px;
   background: radial-gradient(
@@ -10,10 +7,17 @@
     rgba(255, 255, 255, 0.2)
   );
   width: 500px;
-  z-index: 3000;
+
 
   /*padding: 3px calc(var(--padding-unit)*1) 0px calc(var(--padding-unit)*5);
     margin-right: calc(var(--padding-unit)*2);*/
+}
+
+.sticky-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8px;
+  z-index: 3000;
 }
 
 @supports (
@@ -77,10 +81,10 @@ a:visited {
 }
 
 .screenshot-image {
-  max-width: var(--mobile-width);
+  max-width: calc(var(--mobile-width) - 4px);
   height: auto;
   border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .flex-container {
@@ -131,15 +135,16 @@ h3 {
 
 .card-no-background {
   margin-bottom: 0;
-  width: var(--mobile-width);
+
 }
 
 .card-no-background > .card.text {
-  margin-bottom: var(--padding-unit);
+  margin-bottom: calc(var(--padding-unit)*3);
+  margin-right: 0px;
 }
 
 .card.text {
-  width: 100%;
+  width: calc(var(--mobile-width) - 26px);
 }
 
 h4 {
